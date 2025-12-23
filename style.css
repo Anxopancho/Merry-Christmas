@@ -18,7 +18,7 @@ html {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 9999; /* 🔥 THIS WAS MISSING */
+  z-index: 9999;
   background: #c62828;
   color: white;
   border: none;
