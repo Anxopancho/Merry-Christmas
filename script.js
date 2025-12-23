@@ -255,16 +255,30 @@ const toggle = document.getElementById("musicToggle");
 
 let isPlaying = false;
 
-toggle.addEventListener("click", () => {
-  if (!isPlaying) {
-    music.play();
-    toggle.textContent = "🔇 Mute";
-  } else {
-    music.pause();
-    toggle.textContent = "🔊 Music";
+toggle.addEventListener("click", async () => {
+  try {
+    if (!isPlaying) {
+      music.volume = 0;
+      await music.play(); // ✅ allowed because of user click
+
+      let v = 0;
+      const fade = setInterval(() => {
+        v += 0.05;
+        music.volume = Math.min(v, 1);
+        if (v >= 1) clearInterval(fade);
+      }, 100);
+
+      toggle.textContent = "🔇 Mute";
+    } else {
+      music.pause();
+      toggle.textContent = "🔊 Music";
+    }
+    isPlaying = !isPlaying;
+  } catch (err) {
+    console.error("Audio blocked:", err);
   }
-  isPlaying = !isPlaying;
 });
+
 
 const snowContainer = document.getElementById("snow");
 
@@ -285,3 +299,5 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 200);
+
+
