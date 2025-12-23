@@ -1,3 +1,10 @@
+gsap.registerPlugin(
+  MotionPathPlugin,
+  DrawSVGPlugin,
+  MorphSVGPlugin,
+  Physics2DPlugin
+);
+
 MorphSVGPlugin.convertToPath("polygon");
 var xmlns = "http://www.w3.org/2000/svg",
   xlinkns = "http://www.w3.org/1999/xlink",
