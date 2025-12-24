@@ -319,10 +319,10 @@ gsap.from(".christmas-text", {
   delay: 2.5,
   onComplete: () => {
     gsap.to(".christmas-text", {
-      textShadow: "0 0 12px rgba(255,255,255,0.8)",
+      textShadow: "0 0 20px rgba(255,255,255,1.2)",
       repeat: -1,
       yoyo: true,
-      duration: 2
+      duration: 1
     });
   }
 });
