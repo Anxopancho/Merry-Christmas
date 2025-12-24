@@ -99,11 +99,3 @@ svg{
 .footer-credit a:hover {
   text-decoration: underline;
 }
-
-gsap.from(".footer-credit", {
-  opacity: 0,
-  y: 10,
-  duration: 2,
-  ease: "power2.out",
-  delay: 2
-});
