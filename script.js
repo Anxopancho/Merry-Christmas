@@ -311,26 +311,28 @@ function createSnowflake() {
 
 setInterval(createSnowflake, 200);
 
+// Fade-in
 gsap.from(".christmas-text", {
   opacity: 0,
   y: 10,
   duration: 2,
   ease: "power2.out",
-  delay: 2.5,
-  onComplete: () => {
-    gsap.fromTo(
-      ".christmas-text",
-      { textShadow: "0 0 4px rgba(255,255,255,0.3)" },
-      {
-        textShadow: "0 0 22px rgba(255,255,255,1)",
-        repeat: -1,
-        yoyo: true,
-        duration: 1.2,
-        ease: "sine.inOut"
-      }
-    );
-  }
+  delay: 2.5
 });
+
+// Twinkle effect
+function twinkleText() {
+  gsap.to(".christmas-text", {
+    textShadow: `0 0 ${gsap.utils.random(8, 22)}px rgba(255,255,255,${gsap.utils.random(0.5, 1)})`,
+    duration: gsap.utils.random(0.8, 1.4),
+    ease: "sine.inOut",
+    onComplete: twinkleText
+  });
+}
+
+// Start twinkle slightly after fade-in
+gsap.delayedCall(4.5, twinkleText);
+
 
 gsap.from(".footer-credit", {
   opacity: 0,
