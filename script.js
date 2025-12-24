@@ -316,7 +316,15 @@ gsap.from(".christmas-text", {
   y: 10,
   duration: 2,
   ease: "power2.out",
-  delay: 2.5
+  delay: 2.5,
+  onComplete: () => {
+    gsap.to(".christmas-text", {
+      textShadow: "0 0 12px rgba(255,255,255,0.8)",
+      repeat: -1,
+      yoyo: true,
+      duration: 2
+    });
+  }
 });
 
 gsap.from(".footer-credit", {
