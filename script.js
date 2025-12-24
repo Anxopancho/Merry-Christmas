@@ -316,20 +316,21 @@ gsap.from(".christmas-text", {
   y: 10,
   duration: 2,
   ease: "power2.out",
-  delay: 2.5
-});
-
-gsap.fromTo(
-  ".christmas-text",
-  { textShadow: "0 0 4px rgba(255,255,255,0.3)" },
-  {
-    textShadow: "0 0 16px rgba(255,255,255,0.9)",
-    repeat: -1,
-    yoyo: true,
-    duration: 2,
-    delay: 3
+  delay: 2.5,
+  onComplete: () => {
+    gsap.fromTo(
+      ".christmas-text",
+      { textShadow: "0 0 4px rgba(255,255,255,0.3)" },
+      {
+        textShadow: "0 0 22px rgba(255,255,255,1)",
+        repeat: -1,
+        yoyo: true,
+        duration: 1.2,
+        ease: "sine.inOut"
+      }
+    );
   }
-);
+});
 
 gsap.from(".footer-credit", {
   opacity: 0,
